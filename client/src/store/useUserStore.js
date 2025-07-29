@@ -93,7 +93,7 @@ axiosInstance.interceptors.response.use(
 			originalRequest._retry = true;
 
 			try {
-				// If a refresh is already in progress, wait for it to complete
+				
 				if (refreshPromise) {
 					await refreshPromise;
 					return axiosInstance(originalRequest);
